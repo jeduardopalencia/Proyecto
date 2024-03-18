@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #CFDEF5;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #041C2C;
+    padding: 5px;
+    height: 60px;
+}
+
+.menu .imagen {
+    margin-right: auto;
+    height: 50px;
+    transition: 0.5s;
+}
+
+.imagen:hover{
+    transform: scale(1.5,1);
+    opacity: 0.8;
+}
+
+.menu a {
+    color: #F9F9F9;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu a:hover {
+    color: #F1901C;
+    text-decoration: none;
+}
+
+.contenido{
+    display: flex;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.columna1{
+    width: 150%;
+}
+
+.columna2{
+    width: 70%;
+    margin-top: 180px;
+}
+
+.columna1, .columna2{
+    padding: 20px;
+}
+
+.conte-img{
+    width: 100%;
+    padding: 10px 0px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.img-bdd, .img-carro{
+    position: absolute;
+    width: 20%;
+    height: 150px;
+    top: 120%;
+    transition: 0.5s;
+}
+
+.img-bdd:hover, .img-carro:hover{
+    transform: scale(1.5,1);
+    opacity: 0.8;
+}
+
+.img-bdd{
+    left:540px;
+}
+
+.img-carro{
+    left: 940px;
+}
+
+.img-normal{
+    max-width: 100%;
+}
+
+h1{
+    color: #F1901C;
+}
+
+p{
+    text-align: justify;
+}
+
+.imagen-footer{
+    height: 40px;
+    padding: 0px 2px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.nombre{
+    margin-left: 900px;
+    margin-bottom: 10px;
+    align-items: end;
+}
+
+.info-footer{
+    vertical-align:middle;
+    margin-top: 2px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: #041C2C;
+    color: #F9F9F9;
+    padding: 10px;
+    font-size: 16px;
+}
+
+@media (max-width: 700px) {
+    .contenido{
+        flex-direction: column;
+    }
+    .columna1, .columna2 {
+        width: 100%;
+        padding: 0;
+        margin-top: 5px;
+    }
+    p{
+        text-align: center;
+    }
+    .img-bdd{
+        left:20px;
+        top: 130%;
+    }
+    .img-carro{
+        left: 480px;
+        top: 130%;
+    }
+    .nombre{
+        margin-left: 270px;
+        margin-top: 2px;
+    }
+}

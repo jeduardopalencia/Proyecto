@@ -1,0 +1,32 @@
+.formulario {
+    width: 50%;
+    margin: auto;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+label {
+    color:#F1901C;
+    display: block;
+    margin-bottom: 5px;
+    margin-right: 300px;
+}
+
+input, textarea {
+    width: 50%;
+    padding: 5px;
+    margin-right: -50px;
+}
+
+textarea{
+    height: 100px;
+}
+.boton2{
+    border: none;
+    background-color: #F1901C;
+    color: white;
+    width: 20%;
+    height: 40px;
+}
